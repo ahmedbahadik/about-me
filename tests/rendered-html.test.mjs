@@ -25,6 +25,8 @@ test("server-renders Ahmed Bahathiq's portfolio", async () => {
   assert.match(html, /مساري الأكاديمي/);
   assert.match(html, /السيرة الذاتية/);
   assert.match(html, /ما يميزني/);
+  assert.match(html, /أجمع بين فهم الذكاء الاصطناعي وسرعة تحويل الأفكار إلى نماذج عملية\./);
+  assert.doesNotMatch(html, /مع اهتمام بالبساطة/);
   assert.match(html, /Canva/);
   assert.doesNotMatch(html, /السيرة الرقمية|طريقتي في العمل/);
   assert.doesNotMatch(html, /4\.70|4\.86|GPA|المعدل من 5|التفوق الأكاديمي|Academic Excellence/);

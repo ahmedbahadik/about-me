@@ -36,7 +36,7 @@ const content = {
       "أدرس بكالوريوس الذكاء الاصطناعي في جامعة جدة، وأحوّل ما أتعلمه إلى منتجات رقمية حقيقية. أحب النماذج الأولية السريعة، حل المشكلات، وبناء واجهات عربية متجاوبة باستخدام أدوات الذكاء الاصطناعي الحديثة.",
     principle: "ما يميزني",
     principleText:
-      "أجمع بين فهم الذكاء الاصطناعي وسرعة تحويل الأفكار إلى نماذج عملية، مع اهتمام بالبساطة وتجربة المستخدم وجودة التفاصيل.",
+      "أجمع بين فهم الذكاء الاصطناعي وسرعة تحويل الأفكار إلى نماذج عملية.",
     skillsLabel: "التقنيات والأدوات",
     sectionTwo: "02 / مشاريع منجزة",
     projectsTitle: "أفكار تحولت إلى منتجات تعمل.",
@@ -114,7 +114,7 @@ const content = {
       "I am pursuing a BSc in Artificial Intelligence at the University of Jeddah and turning what I learn into real digital products. I enjoy rapid prototyping, problem-solving, and building responsive Arabic-first experiences with modern AI tools.",
     principle: "What I bring",
     principleText:
-      "I combine a strong understanding of AI with the ability to turn ideas into practical prototypes, while caring about simplicity, user experience, and quality details.",
+      "I combine an understanding of AI with the speed to turn ideas into practical prototypes.",
     skillsLabel: "Stack & tools",
     sectionTwo: "02 / Completed projects",
     projectsTitle: "Ideas turned into working products.",
