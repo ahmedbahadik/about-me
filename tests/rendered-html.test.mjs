@@ -18,6 +18,8 @@ test("server-renders Ahmed Bahathiq's portfolio", async () => {
   const html = await response.text();
   assert.match(html, /أحمد يوسف عمر باحاذق/);
   assert.match(html, /لذيذ يا حامض/);
+  assert.match(html, /مشاريع منجزة/);
+  assert.match(html, /https:\/\/ahmedbahadik\.github\.io\/cv\//);
   assert.match(html, /Ahmed_Bahathiq_CV\.pdf/);
   assert.doesNotMatch(html, /codex-preview|Your site is taking shape/);
 });

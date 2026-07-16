@@ -26,7 +26,7 @@ const content = {
     location: "جدة، السعودية",
     stats: [
       ["4.70", "المعدل من 5"],
-      ["02", "مشاريع مختارة"],
+      ["03", "مشاريع منجزة"],
       ["04", "شهادات وجوائز"],
       ["65", "كلمة في الدقيقة"],
     ],
@@ -38,11 +38,10 @@ const content = {
     principleText:
       "أبدأ بالمشكلة، أبني نسخة واضحة بسرعة، ثم أحسّن التجربة بالأرقام والملاحظات — التقنية وسيلة، والنتيجة هي الأهم.",
     skillsLabel: "التقنيات والأدوات",
-    sectionTwo: "02 / أعمال مختارة",
+    sectionTwo: "02 / مشاريع منجزة",
     projectsTitle: "أفكار تحولت إلى منتجات تعمل.",
     projectsSub: "اضغط على المشروع لفتحه مباشرة أو استعرض الكود على GitHub.",
     liveProject: "مشروع مباشر",
-    repoProject: "مشروع على GitHub",
     live: "فتح المشروع",
     code: "عرض الكود",
     projects: [
@@ -108,7 +107,7 @@ const content = {
     location: "Jeddah, Saudi Arabia",
     stats: [
       ["4.70", "GPA out of 5"],
-      ["02", "Featured projects"],
+      ["03", "Completed projects"],
       ["04", "Awards & certificates"],
       ["65", "Words per minute"],
     ],
@@ -120,11 +119,10 @@ const content = {
     principleText:
       "I start with the problem, build a clear first version quickly, then improve the experience with feedback and evidence — technology is the means; impact is the goal.",
     skillsLabel: "Stack & tools",
-    sectionTwo: "02 / Selected work",
+    sectionTwo: "02 / Completed projects",
     projectsTitle: "Ideas turned into working products.",
     projectsSub: "Open a live project directly or explore its source on GitHub.",
     liveProject: "Live project",
-    repoProject: "GitHub project",
     live: "Open project",
     code: "View source",
     projects: [
@@ -363,7 +361,7 @@ export default function Home() {
         </article>
 
         <article className="project-card project-reverse reveal">
-          <a className="project-visual visual-cv" href="https://github.com/ahmedbahadik/cv" target="_blank" rel="noreferrer" aria-label={`${t.code}: ${t.projects[1].title}`}>
+          <a className="project-visual visual-cv" href="https://ahmedbahadik.github.io/cv/" target="_blank" rel="noreferrer" aria-label={`${t.live}: ${t.projects[1].title}`}>
             <div className="browser-bar"><i /><i /><i /><span>ahmed / cv</span></div>
             <div className="resume-mock">
               <div className="resume-side"><div className="mock-avatar">AB</div><b>AHMED<br />BAHATHIQ</b><span /><span /><span /></div>
@@ -372,13 +370,14 @@ export default function Home() {
             <span className="visual-arrow">↗</span>
           </a>
           <div className="project-info">
-            <div className="project-kicker"><span>{t.repoProject}</span><i /></div>
+            <div className="project-kicker"><span>{t.liveProject}</span><i /></div>
             <p>{t.projects[1].tag}</p>
             <h3>{t.projects[1].title}</h3>
             <p className="project-desc">{t.projects[1].desc}</p>
             <div className="tech-row"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
             <div className="project-actions">
-              <a className="text-link primary-link" href="https://github.com/ahmedbahadik/cv" target="_blank" rel="noreferrer">{t.code}<span>↗</span></a>
+              <a className="text-link primary-link" href="https://ahmedbahadik.github.io/cv/" target="_blank" rel="noreferrer">{t.live}<span>↗</span></a>
+              <a className="text-link" href="https://github.com/ahmedbahadik/cv" target="_blank" rel="noreferrer">{t.code}<span>↗</span></a>
             </div>
           </div>
         </article>
