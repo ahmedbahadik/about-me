@@ -25,9 +25,9 @@ const content = {
     profileSub: "AI-Assisted Developer",
     location: "جدة، السعودية",
     stats: [
-      ["4.70", "المعدل من 5"],
+      ["AI", "التخصص الجامعي"],
       ["03", "مشاريع منجزة"],
-      ["04", "شهادات وجوائز"],
+      ["02", "شهادات احترافية"],
       ["65", "كلمة في الدقيقة"],
     ],
     sectionOne: "01 / من أنا",
@@ -56,18 +56,15 @@ const content = {
         desc: "تجربة ويب شخصية لعرض الملف المهني والسيرة بأسلوب تفاعلي، مبنية باستخدام HTML وCSS وJavaScript.",
       },
     ],
-    sectionThree: "03 / التعليم والإنجازات",
+    sectionThree: "03 / التعليم والشهادات",
     journeyTitle: "مسار أكاديمي يبني أساسًا قويًا.",
     education: "التعليم",
     university: "جامعة جدة",
     degree: "بكالوريوس العلوم في الذكاء الاصطناعي",
     college: "كلية علوم وهندسة الحاسب",
     expected: "2024 — 2029 (متوقع)",
-    latest: "المعدل: 4.70/5.00 • آخر فصل: 4.86/5.00",
-    awards: "الشهادات والجوائز",
+    awards: "الشهادات الاحترافية",
     certificates: [
-      ["شهادة التفوق الأكاديمي", "جامعة جدة • 2025/2026"],
-      ["شهادة التفوق الأكاديمي", "جامعة جدة • 2024/2025"],
       ["مقدمة في الذكاء الاصطناعي", "IBM عبر Coursera • فبراير 2026"],
       ["HTML وCSS وJavaScript", "Udemy / YouAccel • مايو 2020"],
     ],
@@ -106,9 +103,9 @@ const content = {
     profileSub: "AI-Assisted Developer",
     location: "Jeddah, Saudi Arabia",
     stats: [
-      ["4.70", "GPA out of 5"],
+      ["AI", "Field of study"],
       ["03", "Completed projects"],
-      ["04", "Awards & certificates"],
+      ["02", "Professional certificates"],
       ["65", "Words per minute"],
     ],
     sectionOne: "01 / About me",
@@ -137,18 +134,15 @@ const content = {
         desc: "An interactive personal web experience for presenting a professional profile and resume, built with HTML, CSS, and JavaScript.",
       },
     ],
-    sectionThree: "03 / Education & recognition",
+    sectionThree: "03 / Education & certificates",
     journeyTitle: "An academic path built on a strong foundation.",
     education: "Education",
     university: "University of Jeddah",
     degree: "Bachelor of Science in Artificial Intelligence",
     college: "College of Computer Science and Engineering",
     expected: "2024 — 2029 (Expected)",
-    latest: "GPA: 4.70/5.00 • Latest semester: 4.86/5.00",
-    awards: "Awards & certificates",
+    awards: "Professional certificates",
     certificates: [
-      ["Academic Excellence Certificate", "University of Jeddah • 2025/2026"],
-      ["Academic Excellence Certificate", "University of Jeddah • 2024/2025"],
       ["Introduction to Artificial Intelligence", "IBM via Coursera • February 2026"],
       ["HTML, CSS & JavaScript", "Udemy / YouAccel • May 2020"],
     ],
@@ -287,7 +281,7 @@ export default function Home() {
             </div>
           </div>
           <div className="floating-chip chip-ai">AI<span>ENGINEER</span></div>
-          <div className="floating-chip chip-gpa"><b>4.70</b><span>GPA / 5</span></div>
+          <div className="floating-chip chip-projects"><b>03</b><span>PROJECTS</span></div>
         </div>
       </section>
 
@@ -397,7 +391,6 @@ export default function Home() {
               <h3>{t.university}</h3>
               <strong>{t.degree}</strong>
               <span>{t.college}</span>
-              <small>{t.latest}</small>
             </div>
           </div>
           <div className="awards-panel reveal">

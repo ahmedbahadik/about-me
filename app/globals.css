@@ -148,8 +148,8 @@ button { color: inherit; }
 .floating-chip { position: absolute; z-index: 4; min-width: 100px; padding: 13px 15px; display: grid; gap: 3px; border: 1px solid rgba(255,255,255,.15); background: rgba(11,11,17,.8); backdrop-filter: blur(16px); border-radius: 17px; box-shadow: 0 18px 40px rgba(0,0,0,.25); animation: float 5s ease-in-out infinite; }
 .floating-chip span { color: #898493; font-size: 8px; font-weight: 800; letter-spacing: .16em; direction: ltr; }
 .chip-ai { top: 19%; inset-inline-start: -3%; color: var(--cyan); font-size: 19px; font-weight: 950; direction: ltr; }
-.chip-gpa { bottom: 16%; inset-inline-end: -3%; animation-delay: -2.5s; }
-.chip-gpa b { font-size: 22px; color: var(--lime); direction: ltr; }
+.chip-projects { bottom: 16%; inset-inline-end: -3%; animation-delay: -2.5s; }
+.chip-projects b { font-size: 22px; color: var(--lime); direction: ltr; }
 
 .stats-strip { padding: 24px 0; display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .stat { padding: 12px 30px; display: grid; gap: 5px; border-inline-end: 1px solid var(--line); }
@@ -331,7 +331,7 @@ footer { width: min(calc(100% - 48px), var(--max-width)); margin: 0 auto; paddin
   .orbit-two { width: 385px; height: 385px; }
   .floating-chip { min-width: 84px; padding: 10px 12px; }
   .chip-ai { inset-inline-start: 0; }
-  .chip-gpa { inset-inline-end: 0; }
+  .chip-projects { inset-inline-end: 0; }
   .section-heading h2 { font-size: 38px; }
   .skill-group { grid-template-columns: 1fr; gap: 11px; }
   .project-card { padding: 10px; border-radius: 22px; }
