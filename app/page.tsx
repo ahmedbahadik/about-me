@@ -34,9 +34,9 @@ const content = {
     aboutTitle: "أتعلم بسرعة، أبني بذكاء، وأهتم بالتفاصيل.",
     aboutText:
       "أدرس بكالوريوس الذكاء الاصطناعي في جامعة جدة، وأحوّل ما أتعلمه إلى منتجات رقمية حقيقية. أحب النماذج الأولية السريعة، حل المشكلات، وبناء واجهات عربية متجاوبة باستخدام أدوات الذكاء الاصطناعي الحديثة.",
-    principle: "طريقتي في العمل",
+    principle: "ما يميزني",
     principleText:
-      "أبدأ بالمشكلة، أبني نسخة واضحة بسرعة، ثم أحسّن التجربة بالأرقام والملاحظات — التقنية وسيلة، والنتيجة هي الأهم.",
+      "أجمع بين فهم الذكاء الاصطناعي وسرعة تحويل الأفكار إلى نماذج عملية، مع اهتمام بالبساطة وتجربة المستخدم وجودة التفاصيل.",
     skillsLabel: "التقنيات والأدوات",
     sectionTwo: "02 / مشاريع منجزة",
     projectsTitle: "أفكار تحولت إلى منتجات تعمل.",
@@ -52,12 +52,12 @@ const content = {
       },
       {
         tag: "واجهة شخصية • 2026",
-        title: "السيرة الرقمية",
+        title: "السيرة الذاتية",
         desc: "تجربة ويب شخصية لعرض الملف المهني والسيرة بأسلوب تفاعلي، مبنية باستخدام HTML وCSS وJavaScript.",
       },
     ],
     sectionThree: "03 / التعليم والشهادات",
-    journeyTitle: "مسار أكاديمي يبني أساسًا قويًا.",
+    journeyTitle: "مساري الأكاديمي",
     education: "التعليم",
     university: "جامعة جدة",
     degree: "بكالوريوس العلوم في الذكاء الاصطناعي",
@@ -112,9 +112,9 @@ const content = {
     aboutTitle: "I learn fast, build smart, and care about the details.",
     aboutText:
       "I am pursuing a BSc in Artificial Intelligence at the University of Jeddah and turning what I learn into real digital products. I enjoy rapid prototyping, problem-solving, and building responsive Arabic-first experiences with modern AI tools.",
-    principle: "How I work",
+    principle: "What I bring",
     principleText:
-      "I start with the problem, build a clear first version quickly, then improve the experience with feedback and evidence — technology is the means; impact is the goal.",
+      "I combine a strong understanding of AI with the ability to turn ideas into practical prototypes, while caring about simplicity, user experience, and quality details.",
     skillsLabel: "Stack & tools",
     sectionTwo: "02 / Completed projects",
     projectsTitle: "Ideas turned into working products.",
@@ -130,12 +130,12 @@ const content = {
       },
       {
         tag: "Personal experience • 2026",
-        title: "Digital CV",
+        title: "Curriculum Vitae",
         desc: "An interactive personal web experience for presenting a professional profile and resume, built with HTML, CSS, and JavaScript.",
       },
     ],
     sectionThree: "03 / Education & certificates",
-    journeyTitle: "An academic path built on a strong foundation.",
+    journeyTitle: "My academic journey",
     education: "Education",
     university: "University of Jeddah",
     degree: "Bachelor of Science in Artificial Intelligence",
@@ -166,7 +166,7 @@ const content = {
 const skillGroups = [
   ["CORE", "HTML", "CSS", "JavaScript", "Git", "Vibe Coding"],
   ["AI & CODE", "AI-Assisted Development", "Python", "Java", "Node.js"],
-  ["TOOLS", "Claude", "Codex", "Replit", "Figma"],
+  ["TOOLS", "Claude", "Codex", "Replit", "Figma", "Canva"],
 ];
 
 export default function Home() {

@@ -22,6 +22,11 @@ test("server-renders Ahmed Bahathiq's portfolio", async () => {
   assert.match(html, /https:\/\/ahmedbahadik\.github\.io\/cv\//);
   assert.match(html, /مقدمة في الذكاء الاصطناعي/);
   assert.match(html, /HTML وCSS وJavaScript/);
+  assert.match(html, /مساري الأكاديمي/);
+  assert.match(html, /السيرة الذاتية/);
+  assert.match(html, /ما يميزني/);
+  assert.match(html, /Canva/);
+  assert.doesNotMatch(html, /السيرة الرقمية|طريقتي في العمل/);
   assert.doesNotMatch(html, /4\.70|4\.86|GPA|المعدل من 5|التفوق الأكاديمي|Academic Excellence/);
   assert.match(html, /Ahmed_Bahathiq_CV\.pdf/);
   assert.doesNotMatch(html, /codex-preview|Your site is taking shape/);
