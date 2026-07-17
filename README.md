@@ -1,7 +1,6 @@
 # About Me — Ahmed Bahathiq
 
-الموقع الشخصي لأحمد يوسف عمر باحاذق، طالب ذكاء اصطناعي ومطور يعتمد على الذكاء الاصطناعي لبناء تجارب ويب عملية.
-
+موقع تعريف بنفسي 
 ## الموقع المباشر
 
 [ahmedbahadik.github.io/about-me](https://ahmedbahadik.github.io/about-me/)
