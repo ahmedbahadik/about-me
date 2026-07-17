@@ -4,8 +4,8 @@ import { dirname, join } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 
 const projectRoot = dirname(dirname(fileURLToPath(import.meta.url)));
-const githubPagesUrl = "https://ahmedbahadik.github.io/about-me/";
-const renderUrl = "https://ahmedbahadik.github.io/";
+const githubPagesUrl = "https://ahmedbahathiq.com/";
+const renderUrl = githubPagesUrl;
 
 if (!process.env.npm_execpath) {
   throw new Error("Run this script through npm: npm run build:github");
@@ -29,7 +29,7 @@ const response = await workerModule.default.fetch(
   new Request(renderUrl, {
     headers: {
       accept: "text/html",
-      "x-forwarded-host": "ahmedbahadik.github.io",
+      "x-forwarded-host": "ahmedbahathiq.com",
       "x-forwarded-proto": "https",
     },
   }),
@@ -41,9 +41,9 @@ if (!response.ok) {
 
 const html = await response.text();
 const requiredText = [
-  "/about-me/assets/",
-  "/about-me/ahmed-bahathiq.jpeg",
-  "/about-me/Ahmed_Bahathiq_CV.pdf",
+  "/assets/",
+  "/ahmed-bahathiq.jpeg",
+  "/Ahmed_Bahathiq_CV.pdf",
   "أحمد يوسف عمر باحاذق",
 ];
 

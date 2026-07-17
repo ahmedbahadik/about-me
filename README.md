@@ -3,7 +3,7 @@
 موقع تعريف بنفسي 
 ## الموقع المباشر
 
-[ahmedbahadik.github.io/about-me](https://ahmedbahadik.github.io/about-me/)
+[ahmedbahathiq.com](https://ahmedbahathiq.com/)
 
 ## التشغيل محليًا
 

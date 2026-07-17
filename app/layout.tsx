@@ -25,10 +25,10 @@ export async function generateMetadata(): Promise<Metadata> {
     (host.startsWith("localhost") ? "http" : "https");
   const baseUrl = `${protocol}://${host}`;
   const canonicalUrl = isGitHubPages
-    ? "https://ahmedbahadik.github.io/about-me/"
+    ? "https://ahmedbahathiq.com"
     : baseUrl;
   const assetBaseUrl = isGitHubPages
-    ? "https://ahmedbahadik.github.io/about-me"
+    ? "https://ahmedbahathiq.com"
     : baseUrl;
 
   return {
