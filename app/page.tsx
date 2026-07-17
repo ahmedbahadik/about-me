@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 
 type Language = "ar" | "en";
 
+const publicAsset = (fileName: string) => `${import.meta.env.BASE_URL}${fileName}`;
+
 const content = {
   ar: {
     nav: [
@@ -258,7 +260,7 @@ export default function Home() {
             <a className="button button-primary" href="#projects">
               {t.seeWork}<span aria-hidden="true">↗</span>
             </a>
-            <a className="button button-secondary" href="/Ahmed_Bahathiq_CV.pdf" download>
+            <a className="button button-secondary" href={publicAsset("Ahmed_Bahathiq_CV.pdf")} download>
               {t.download}<span aria-hidden="true">↓</span>
             </a>
           </div>
@@ -272,7 +274,7 @@ export default function Home() {
               <span>AHMED.B</span><span>01 / 26</span>
             </div>
             <div className="portrait-wrap">
-              <img src="/ahmed-bahathiq.jpeg" alt={isArabic ? "الصورة الشخصية لأحمد باحاذق" : "Portrait of Ahmed Bahathiq"} />
+              <img src={publicAsset("ahmed-bahathiq.jpeg")} alt={isArabic ? "الصورة الشخصية لأحمد باحاذق" : "Portrait of Ahmed Bahathiq"} />
               <div className="scan-line" aria-hidden="true" />
             </div>
             <div className="portrait-meta">
@@ -407,7 +409,7 @@ export default function Home() {
         <div className="resume-banner reveal">
           <div className="resume-orb" aria-hidden="true">CV</div>
           <div><p className="section-number">{t.resumeEyebrow}</p><h3>{t.resumeTitle}</h3><p>{t.resumeText}</p></div>
-          <a className="button button-light" href="/Ahmed_Bahathiq_CV.pdf" download>{t.resumeButton}<span>↓</span></a>
+          <a className="button button-light" href={publicAsset("Ahmed_Bahathiq_CV.pdf")} download>{t.resumeButton}<span>↓</span></a>
         </div>
       </section>
 

@@ -14,6 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export async function generateMetadata(): Promise<Metadata> {
+  const isGitHubPages = process.env.GITHUB_PAGES === "true";
   const requestHeaders = await headers();
   const host =
     requestHeaders.get("x-forwarded-host") ??
@@ -23,26 +24,32 @@ export async function generateMetadata(): Promise<Metadata> {
     requestHeaders.get("x-forwarded-proto") ??
     (host.startsWith("localhost") ? "http" : "https");
   const baseUrl = `${protocol}://${host}`;
+  const canonicalUrl = isGitHubPages
+    ? "https://ahmedbahadik.github.io/about-me/"
+    : baseUrl;
+  const assetBaseUrl = isGitHubPages
+    ? "https://ahmedbahadik.github.io/about-me"
+    : baseUrl;
 
   return {
     title: "أحمد باحاذق | مهندس ذكاء اصطناعي ومطور",
     description:
       "الموقع الشخصي لأحمد يوسف عمر باحاذق - طالب ذكاء اصطناعي ومطور تجارب ويب مدعومة بالذكاء الاصطناعي في جدة.",
-    alternates: { canonical: baseUrl },
+    alternates: { canonical: canonicalUrl },
     openGraph: {
       title: "Ahmed Bahathiq | AI Engineer",
       description: "AI student and AI-assisted developer building smart digital experiences.",
       type: "website",
-      url: baseUrl,
+      url: canonicalUrl,
       locale: "ar_SA",
       alternateLocale: "en_US",
-      images: [{ url: `${baseUrl}/og.png`, width: 1200, height: 630 }],
+      images: [{ url: `${assetBaseUrl}/og.png`, width: 1200, height: 630 }],
     },
     twitter: {
       card: "summary_large_image",
       title: "Ahmed Bahathiq | AI Engineer",
       description: "AI student and AI-assisted developer building smart digital experiences.",
-      images: [`${baseUrl}/og.png`],
+      images: [`${assetBaseUrl}/og.png`],
     },
   };
 }
