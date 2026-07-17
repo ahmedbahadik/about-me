@@ -177,6 +177,19 @@ export default function Home() {
   const t = content[language];
   const isArabic = language === "ar";
 
+  const navigateToSection = (event: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    event.preventDefault();
+    event.stopPropagation();
+
+    const target = document.querySelector<HTMLElement>(href);
+    if (!target) return;
+
+    const top = href === "#home" ? 0 : target.getBoundingClientRect().top + window.scrollY;
+    window.history.replaceState(null, "", href);
+    window.scrollTo({ top, left: 0, behavior: "auto" });
+    event.currentTarget.blur();
+  };
+
   useEffect(() => {
     document.documentElement.lang = language;
     document.documentElement.dir = isArabic ? "rtl" : "ltr";
@@ -218,7 +231,7 @@ export default function Home() {
       <div className="ambient ambient-two" aria-hidden="true" />
 
       <header className="topbar">
-        <a className="brand" href="#home" aria-label={isArabic ? "العودة للرئيسية" : "Back to home"}>
+        <a className="brand" href="#home" onClick={(event) => navigateToSection(event, "#home")} aria-label={isArabic ? "العودة للرئيسية" : "Back to home"}>
           <span className="brand-mark">AB</span>
           <span className="brand-copy">
             AHMED
@@ -228,7 +241,7 @@ export default function Home() {
 
         <nav className="nav-links" aria-label={isArabic ? "التنقل الرئيسي" : "Primary navigation"}>
           {t.nav.map(([label, href]) => (
-            <a href={href} key={href}>{label}</a>
+            <a href={href} key={href} onClick={(event) => navigateToSection(event, href)}>{label}</a>
           ))}
         </nav>
 
@@ -243,7 +256,7 @@ export default function Home() {
             <i aria-hidden="true" />
             <span className={isArabic ? "active" : ""}>ع</span>
           </button>
-          <a className="nav-contact" href="#contact">{t.contact}</a>
+          <a className="nav-contact" href="#contact" onClick={(event) => navigateToSection(event, "#contact")}>{t.contact}</a>
         </div>
       </header>
 
@@ -257,7 +270,7 @@ export default function Home() {
           </h1>
           <p className="hero-lead">{t.heroText}</p>
           <div className="hero-actions">
-            <a className="button button-primary" href="#projects">
+            <a className="button button-primary" href="#projects" onClick={(event) => navigateToSection(event, "#projects")}>
               {t.seeWork}<span aria-hidden="true">↗</span>
             </a>
             <a className="button button-secondary" href={publicAsset("Ahmed_Bahathiq_CV.pdf")} download>
@@ -435,7 +448,7 @@ export default function Home() {
       </section>
 
       <footer>
-        <a className="brand footer-brand" href="#home"><span className="brand-mark">AB</span><span className="brand-copy">AHMED<small>AI / DEV</small></span></a>
+        <a className="brand footer-brand" href="#home" onClick={(event) => navigateToSection(event, "#home")}><span className="brand-mark">AB</span><span className="brand-copy">AHMED<small>AI / DEV</small></span></a>
         <p>{t.footer}</p>
         <span>© {new Date().getFullYear()}</span>
       </footer>
