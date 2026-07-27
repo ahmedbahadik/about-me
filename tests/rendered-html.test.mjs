@@ -31,6 +31,6 @@ test("server-renders Ahmed Bahathiq's portfolio", async () => {
   assert.doesNotMatch(html, /السيرة الرقمية|طريقتي في العمل/);
   assert.doesNotMatch(html, /4\.70|4\.86|GPA|المعدل من 5|التفوق الأكاديمي|Academic Excellence/);
   assert.match(html, /Ahmed_Bahathiq_CV\.pdf/);
-  assert.match(html, /https:\/\/www\.tiktok\.com\/@\*41ff\*/);
+  assert.match(html, /https:\/\/www\.tiktok\.com\/@_41ff_/);
   assert.doesNotMatch(html, /codex-preview|Your site is taking shape/);
 });
