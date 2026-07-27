@@ -442,7 +442,7 @@ export default function Home() {
             <span>{t.follow}</span>
             <a href="https://github.com/ahmedbahadik" target="_blank" rel="noreferrer">GitHub ↗</a>
             <a href="https://www.linkedin.com/in/ahmed-bahathiq-b2bb31361/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
-            <a href="https://www.tiktok.com/@41ff" target="_blank" rel="noreferrer">TikTok ↗</a>
+            <a href="https://www.tiktok.com/@*41ff*" target="_blank" rel="noreferrer">TikTok ↗</a>
           </div>
         </div>
       </section>
